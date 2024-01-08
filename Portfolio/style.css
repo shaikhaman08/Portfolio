@@ -1,0 +1,154 @@
+@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-family:Poppins;
+    font-size: 40px;
+    color: rgb(141, 214, 141) ;
+    text-decoration:none;
+    font-weight: 700;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a:hover, 
+.navbar a.active{
+    color: rgb(234, 234, 234);
+} 
+
+.home{
+    height: 100vh;
+    background: linear-gradient(-90deg, rgb(141, 214, 141) 65%, #fff 35%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background: rgb(141, 214, 141) ;
+    border-radius: 52%;
+    border: 25px solid #fff;
+    outline: 25px solid white
+     
+}
+
+.home-image img{
+    position: relative;
+    bottom: 10px;
+    /* max-width: 380px;  */
+    width: 400px;
+    height: 400px;
+
+}
+
+.home-content{
+    max-width: 600px;
+    color: #ffffff;
+    text-align: right;
+}
+
+.home-content h1{
+    font-size: 45px;
+    line-height: 1.2;
+}
+
+.home-content h3{
+    font-size: 35px;
+    color: transparent;
+    background: linear-gradient(rgb(250, 179, 55), rgb(194, 196, 208));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: .5px #ffffff;
+    background-position: -410px 0;
+    animation: animateText 6s linear infinite;
+}
+
+@keyframes animateText{ 
+    0%, 95%, 100%{
+        background-position: -410px 0;
+    }
+    65%, 85%{
+        background-position: 0 0;
+    }
+}
+
+.home-image p{
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.home-sci{
+    margin: 25px 0 40px;   
+}
+
+
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(13, 36, 128);
+    text-decoration: none;
+    margin-left: 12px;
+    transition: .5s;
+}
+
+.home-sci a:hover{
+    background: rgb(89, 91, 183);
+    color: #fff;
+    border-color: rgb(231, 231, 231);
+    box-shadow: 0 0 10px rgb(77, 117, 236);
+}
+
+.btn{
+    padding: 12px 35px;
+    background: black;
+    border-radius: 40px;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px rgb(111, 126, 26);
+    transition: .5s;
+}
+
+.btn:hover{
+    box-shadow: none;
+}
